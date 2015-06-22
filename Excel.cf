@@ -1,0 +1,18 @@
+EAdd. Exp  ::= Exp "+" Exp1;
+ESub. Exp  ::= Exp "-" Exp1;
+EMul. Exp1 ::= Exp1 "*" Exp2;
+EDiv. Exp1 ::= Exp1 "/" Exp2;
+ECat. Exp2 ::= Exp2 "&" Exp3;
+EEqu. Exp2 ::= Exp2 "=" Exp3;
+ELth. Exp2 ::= Exp2 "<" Exp3;
+EGth. Exp2 ::= Exp2 ">" Exp3;
+
+EGte. Exp2 ::= Exp2 ">=" Exp3;
+ENeq. Exp2 ::= Exp2 "<>" Exp3;
+ELte. Exp2 ::= Exp2 "<=" Exp3;
+
+TInt. Exp3 ::= Integer;
+TDbl. Exp3 ::= Double;
+TStr. Exp3 ::= String;
+
+coercions Exp 3;
